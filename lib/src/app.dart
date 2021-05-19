@@ -1,11 +1,14 @@
 import 'package:flutter/material.dart';
 import 'ui/view.dart';
 
-class App extends StatelessWidget {
+class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
       home: Scaffold(
+        appBar: AppBar(
+          title: Text('API VIACEP'),
+        ),
         body: ViewViaCep(),
       ),
     );
